@@ -1,0 +1,3 @@
+grant codeBase "file:C:/Users/com.kalistore.model.User/IdeaProjects/untitled/out/production/untitled/" {
+    permission java.security.AllPermission;
+};
