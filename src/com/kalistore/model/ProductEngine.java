@@ -36,7 +36,6 @@ public class ProductEngine
 		}
 		List<Product> collect = categoryMatches.entrySet().stream().sorted(Comparator.comparing(Map.Entry::getValue))
 				.map(Map.Entry::getKey).collect(Collectors.toList());
-		collect.remove(0);
 		return collect;
 	}
 }

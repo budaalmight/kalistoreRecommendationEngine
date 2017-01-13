@@ -9,6 +9,6 @@ public class ReviewEngine
 {
 	public List<Product> getProductsByRatings(List<Product> allProducts)
 	{
-		return allProducts.stream().sorted(Comparator.comparing(Product::getRating)).collect(Collectors.toList());
+		return allProducts.stream().sorted(Comparator.comparing(Product::getRating).reversed()).collect(Collectors.toList());
 	}
 }
